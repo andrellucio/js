@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body
+        {
+
+            font: normal 30pt Arial;
+
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite seu nome: ')
+        //var idade = Number(window.prompt('Digite sua idade: '))
+        //var rua = window.prompt('Digite o nome da sua rua: ')
+        //var nr = Number(window.prompt('Informe numero da sua casa: '))
+        var sal = Number(window.prompt('Diga qual é o seu salário: '))
+        
+        if(sal<10000)
+        {
+
+        anual = sal * 12;
+        test = anual
+       
+        }
+       
+        
+
+        document.write(`Olá,<strong>${nome.toUpperCase(nome)}</strong>!. Você tem ${idade}.<br/><br/>`)
+
+        document.write(`Você mora na rua: ${rua} e no numero: ${nr}.<br/><br/>`)
+        document.write(`Seu salário é de : ${sal.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}.<br/><br/>`)
+        document.write(`Seu salário Anual é de: ${anual.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}.`)
+        document.write(`Seu salário Anual é de: ${test.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}.`)
+
+    </script>
+    
+</body>
+</html>

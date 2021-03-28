@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body
+        {//Nessa parte do programa é css
+           
+            font: normal 25pt Arial;
+
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Qual seu nome: ")
+        var idade = Number(window.prompt('Qual a sua idade? ')) 
+        var n1 = Number(window.prompt('Qual o seu salário por mês? '))
+
+
+
+
+        document.write(`Olá,<strong> ${nome}!</strong> Seu nome tem ${nome.length} letras.<br/><br/>`)
+        //document.write(`Seu nome em minusculo é ${nome.toLowerCase(nome)} .<br/>`)
+       //document.write(`Seu nome em MAIUSCULO é ${nome.toUpperCase(nome)}. <br/> `)
+       
+       //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})  -> o valor digitado já é convertido para real
+       document.write(`Sua idade é ${idade} e o seu Salário é ${ n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+
+</script>
+    
+</body>
+</html>
